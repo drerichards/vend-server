@@ -25,7 +25,7 @@ const returnProducts = (res, term1, term2, term3, store) => {
       })
     )
     .catch(error => {
-      res.status(500).json({ message: "Internal server error" })
+      res.status(500).json({ message: error })
     })
 }
 
